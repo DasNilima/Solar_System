@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Remix Icon -->
@@ -13,6 +13,7 @@
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="./output.css" rel="stylesheet">
     <title>Explore the Solar System</title>
 </head>
 
@@ -47,7 +48,272 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
                 </div>
             </nav>
     </header>
+    <main>
+        <!--==================== HOME ====================-->
+        <section id="home" class="relative">
+            <div class="container">
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!-- Home content  -->
+                    <div class="home__data w-full space-y-5 lg:w-1/2">
+                        <h1>
+                        <span class="text-yellow-500">Welcome</span> to <br> <Span class="text-yellow-500">Solar</Span> System</h1>
+                        <p class="text-slate-300">
+                            Discover the wonders of the Sun, planets, moons, and everything else 
+                            that makes our solar system extraordinary.
+                        </p>
+                    <!----button ------->
+                    <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                        <button>
+                            <span class="btn btn_outline">Explore More <i class="ri-earth-line"></i></span>
+                        </button>
+                    </div>
+                    <!----social icon ------->
+                    <div class="flex items-center gap-5 text-lg lg:pt-10">
+                        <i class="ri-facebook-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-twitter-x-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                        <i class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-linkedin-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                    </div>
+                    </div>
+                <!-- ---Home image ------->
+                    <div class="w-full relative lg:w-1/2">
+                        <img class="home__image"  src="assests/image/home.jpeg" alt="home_image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== OVERVIEW ====================-->
+        <section id="overview" class="relative overflow-hidden">
+            <div class="container space-y-10 xl:space-y-0">
+                <div class="overview__data flex flex-col items-center lg:flex-row gap-5">
+                    <!-- image -->
+                    <div class="w-full relative lg:w-1/2">
+                        <img src="assests/image/solar.png" alt="overview_image">
+                    </div>
+                    <!-- content -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h2>
+                                About Our <span class="text-yellow-500"> Solar</span> System
+                            </h2>
+                            <p class="text-slate-300">
+                            Our solar system is home to the Sun, eight planets, dozens of moons, countless asteroids, comets, and 
+                            other celestial objects. Located in the Milky Way galaxy, it's the only place we know of that harbors 
+                            life – on Earth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== PLANETS ====================-->
+        <section id="planets" class="relative mb-20 md:mb-28 overflow-hidden">
+                <!-- title -->
+                <div class="planets__title flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                    <h2>Planets of the <span class="text-yellow-500">Solar</span> System</h2>
+                </div>
+                <div class="container w-full">
+                <!-- Card Container -->    
+                <div class="swiper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8 py-12">
+                    <ul class="swiper-wrapper">
+                            <!-- swiper-slide -1 -->
+                            <li class="swiper-slide">
+                                <!-- Card 1 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                    <!-- card image -->
+                                    <img class="w-full" src="assests/image/mercury.jpeg" alt="mercury-image">
+                                <!-- card content -->              
+                                <div class="px-4 py-4">
+                                    <h3>Mercury</h3>
+                                    <p class="text-slate-300 text-base">
+                                        Mercury is the closest planet to the Sun and the smallest in our solar system. 
+                                        It has no atmosphere, and its surface temperatures vary drastically between day and night. 
+                                    </p>
+                                </div> 
+                                <!-- list of item -->
+                                <div class="px-6 pt-4 pb-2">
+                                    <ul class=" text-slate-300 list-disc list-inside">
+                                        <li> Distance: 57.9 million km</li>
+                                        <li>Orbital Period: 88 days</li>
+                                        <li>Moons: None</li>
+                                    </ul> 
+                                    </div>
+                                </article>
+                            </li>
+                            <!-- swiper-slide -2 -->
+                            <li class="swiper-slide">
+                                <!-- card 2 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                    <!-- card image -->
+                                    <img class="w-full" src="assests/image/venus.jpeg" alt="venus-image">
+                                    <!-- card content -->   
+                                    <div class="px-4 py-4">
+                                        <h3>Venus</h3>
+                                        <p class="text-slate-300 text-base">Venus is the second planet from the Sun and 
+                                            is known for its thick, toxic atmosphere. Its surface is hotter than any other planet 
+                                            in the solar system due to the greenhouse effect.</p>
+                                    </div>
+                                    <!-- list of item -->
+                                    <div class="px-6 pt-4 pb-2" >
+                                        <ul class=" text-slate-300 list-disc list-inside">
+                                        <li>Distance: 108.2 million km</li>
+                                        <li>Orbital Period: 225 days</li>
+                                        <li>Moons: None</li>
+                                        </ul>
+                                    </div>           
+                                </article>
+                            </li>
+                            <!-- swiper-slide -3 -->
+                            <li class="swiper-slide">
+                                <!-- card 3 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                    <!-- card image -->
+                                    <img  class="w-full" src="assests/image/earth.jpeg" alt="earth-image">             
+                                    <!-- content --> 
+                                    <div class="px-4 py-4">
+                                    <h3>Earth</h3>
+                                    <p class="text-base text-slate-300">Earth is the third planet from the 
+                                        Sun and the only planet known to support life. It has one natural satellite, 
+                                        the Moon. </p>
+                                    </div>  
+                                    <div class="px-6 pt-4 pb-2">
+                                        <ul class="text-slate-300 list-disc list-inside" >
+                                        <li>Distance: 149.6 million km</li>
+                                        <li>Orbital Period: 365.25 days</li>
+                                        <li>Moons: 1 </li>
+                                        </ul> 
+                                    </div> 
+                                </article>
+                            </li>
+                            <!-- swiper-slide -4 -->
+                            <li class="swiper-slide">
+                                <!-- card 4 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                <!-- image -->
+                                <img class ="w-full" src="assests/image/mars.jpeg" alt="mars-image">
+                            
+                                <!-- content -->
+                                <div class="px-4 py-4">
+                                <h3 class="font-Orbitron">Mars</h3>
+                                <p class="text-base text-slate-300">Mars, the fourth planet from the Sun, 
+                                    is often called the "Red Planet" because of its reddish appearance caused by iron oxide on its surface. 
+                                    It's a prime candidate for future human exploration.
+                                </p> 
+                                </div>
+                                <div class="px-6 pt-4 pb-2">
+                                <ul class="text-slate-300 list-disc list-inside" >
+                                    <li>Distance: 227.9 million km</li>
+                                    <li>Orbital Period: 687 days</li>
+                                    <li>Moons: 2 (Phobos, Deimos)</li>
+                                </ul>
+                                </div>   
+                                </article>
+                            </li>
+                            <!-- swiper-slide -5 -->
+                            <li class="swiper-slide">
+                                <!-- card 5 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                            <!-- image -->
+                            <img  class ="w-full" src="assests/image/jupiter.jpeg" alt="jupiter-image">
+                                <!-- content -->
+                                <div class="px-4 py-4">
+                                    <h3>Jupiter</h3>
+                                    <p class="text-base text-slate-300">Jupiter is the largest planet in our solar system. 
+                                        It's known for its massive size, Great Red Spot (a giant storm), and many moons, 
+                                        including the four largest: Io, Europa, Ganymede, and Callisto.</p>
+                                </div>
+                                <div class="px-6 pb-2">
+                                    <ul class="text-slate-300 list-disc list-inside" >
+                                        <li>Distance: 778.5 million km</li>
+                                        <li>Orbital Period: 12 years</li>
+                                        <li>Moons: 79 </li>
+                                    </ul>
+                                    </div>
+                                </article>
+                            </li>
+                            <!-- swiper-slide -6 -->
+                            <li class="swiper-slide">
+                                <!-- card 6 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                    <!-- image -->
+                                    <img  class ="w-full" src="assests/image/saturn.jpeg" alt="saturn-image">
+                                    <!-- content -->
+                                    <div class="px-4 py-4">
+                                        <h3>Saturn</h3>
+                                        <p class="text-base text-slate-300">Saturn is famous for its stunning ring system, 
+                                            which is made up of ice and rock. It's the second-largest planet in the solar system and has 
+                                            numerous moons, including Titan, its largest.
+                                        </p>
+                                    </div>
+                                    <div class="px-6 pt-4 pb-2">
+                                        <ul class="text-slate-300 list-disc list-inside" >
+                                            <li>Distance: 1.43 billion km</li>
+                                            <li>Orbital Period: 29 years</li>
+                                            <li>Moons: 83 </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </li>
+                            <!-- swiper-slide -7 -->
+                            <li class="swiper-slide">
+                                <!-- card 7 -->
+                                <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                <!-- image -->
+                                <img class ="w-full" src="assests/image/uranus.jpeg" alt="uranus-image">
+                                <!-- content -->
+                                    <div class="px-4 py-4">
+                                        <h3>Uranus</h3>
+                                        <p class="text-base text-slate-300">Uranus is unique for its sideways rotation and faint ring system.
+                                            It's an ice giant with a frigid atmosphere composed mainly of hydrogen, helium, and methane.</p>
+                                    </div>
+                                    <div class="px-6 pb-2">
+                                        <ul class="text-slate-300 list-disc list-inside" >
+                                            <li>Distance: 2.87 billion km</li>
+                                            <li>Orbital Period: 84 years</li>
+                                            <li>Moons: 27</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </li>
+                            <!-- swiper-slide -8 -->
+                            <li class="swiper-slide">
+                                <!-- card 8 -->
+                            <article class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                                <!-- image -->
+                                    <img  class ="w-full" src="assests/image/neptune.jpeg" alt="earth-image">
+                                <!-- content -->
+                                <div class="px-4 py-4">
+                                    <h3>Neptune</h3>
+                                    <p class="text-base text-slate-300">Neptune, the furthest planet from the Sun, is a deep blue ice giant. 
+                                        Its most prominent feature is the Great Dark Spot, a storm system similar to Jupiter's Great Red Spot. 
+                                    </p>
+                                </div>
+                                <div class="px-6 pt-4 pb-2">
+                                    <ul class="text-slate-300 list-disc list-inside" >
+                                        <li>Distance: 4.5 billion km</li>
+                                        <li>Orbital Period: 165 years</li>
+                                        <li>Moons: 14 </li>
+                                    </ul>
+                                </div>  
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div> 
+            </div>
+        </section>
+        <!--==================== MOONS ====================-->
+        <section id="moons"></section>
+        <!--==================== CELESTIAL OBJECT ====================-->
+        <section id="celestial"></section>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <!--==================== SCROLL UP ====================-->
+    <!--==================== SWIPE JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--==================== SCROLLREVEAL ====================-->
+    <script src="assests/js/scrollreveal.min.js"></script>
+    <!--==================== INDEX.JS ====================-->
+    <script src="index.js"></script>
 </body>
-<!--~~~~~~~~~~ indexjs ~~~~~~~~~~-->
-<script src="index.js"></script>
 </html>
