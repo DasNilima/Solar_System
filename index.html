@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Remix Icon -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+    <!-- Swiper's css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Explore the Solar System</title>
 </head>
+
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <img 
+src="assests/image/background_image.webp" alt="background-image" class="fixed w-full h-screen object-cover"/>
+<!-------------------Header------------------------->
+    <header id="navbar" class="bg-black fixed w-full top-0 left-0 z-50">
+            <nav class="container flex items-center justify-between h-16 sm:h-20">
+                <div class="font-Orbitron sm:text-xs text-yellow-500">SolarSystem</div>
+                <!-------------------Nav Menu------------------------->
+                <div id="nav-menu" class="font-Orbitron absolute top-0 left-[-100%] min-h-[80vh] w-full bg-black-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                    <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#overview" class="nav-link">Overview</a></li>
+                        <li><a href="#planets" class="nav-link">Planets</a></li>
+                        <li><a href="#moons" class="nav-link">Moons</a></li>
+                        <li><a href="#celestial" class="nav-link">Celestial</a></li>
+                    </ul>
+                <!-----------------hamburger menu image-------------------------->
+                <div class="absolute bottom-0 right-10 opacity-90 lg:hidden">
+                    <img src="assests/image/solar.png" alt="solar_image" class="w-32">
+                </div>
+                <div class="absolute top-5 -left-0  opacity-90 lg:hidden">
+                    <img src="assests/image/home.png" alt="solar_image" class="w-32">
+                </div>
+                </div>
+                <!-----------------hamburger menu-------------------------->
+                <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                    <i class="ri-menu-4-line" id="hamburger"></i>
+                </div>
+                </div>
+            </nav>
+    </header>
 </body>
+<!--~~~~~~~~~~ indexjs ~~~~~~~~~~-->
+<script src="index.js"></script>
 </html>
