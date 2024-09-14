@@ -108,11 +108,15 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
         </section>
         <!--==================== PLANETS ====================-->
         <section id="planets" class="relative mb-20 md:mb-28 overflow-hidden">
+            <div class="container w-full">
+                <!-- floating astronaut -->
+                <div class="astronaut__image-1 absolute -top-8 -right-12 opacity-50">
+                    <img src="assests/image/astronaut__1.png" alt="astronaut_image" class="w-40 md:w-52 xl:w-64">
+                </div> 
                 <!-- title -->
                 <div class="planets__title flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
                     <h2>Planets of the <span class="text-yellow-500">Solar</span> System</h2>
                 </div>
-                <div class="container w-full">
                 <!-- Card Container -->    
                 <div class="swiper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8 py-12">
                     <ul class="swiper-wrapper">
@@ -303,12 +307,163 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
             </div>
         </section>
         <!--==================== MOONS ====================-->
-        <section id="moons"></section>
+        <section id="moons" class="relative overflow-hidden">
+            <div class="container w-full">
+                <!-- floating astronaut -->
+                <div class="astronaut__image-2 absolute -top-8 -left-12 opacity-50">
+                    <img src="assests/image/astronaut__1.png" alt="astronaut_image" class="w-40 md:w-52 xl:w-64 transform -scale-x-100">
+                </div>
+                    <!-- title -->
+                <div class="moons__title flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                    <h2>Fascinating Moons of the <span class="text-yellow-500">Solar </span>System</h2>
+                </div>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8">
+                    <!-- article 1 -->
+                <article class="moons__card max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                <!-- Cover Image -->
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="assests/image/moon.jpeg" alt="Moon Image">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-4 py-2 text-white">
+                        <h3>The Moon (Earth)</h3>
+                    </div>
+                </div>
+                <!-- Content Section -->
+                <div class="px-4 py-4">
+                    <p class="text-slate-300 text-base">The Moon is Earth's only natural satellite and the fifth-largest moon in 
+                        the solar system. 
+                        Its phases have been integral to human culture for millennia.</p>
+                </div>
+                </article>
+                <!-- article 2 -->
+                <article class="moons__card max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                    <!-- Cover Image -->
+                    <div class="relative">
+                        <img class="w-full h-48 object-cover" src="assests/image/titan.jpeg" alt="Moon Image">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-4 py-2">
+                        <h3>Titan (Saturn)</h3>
+                    </div>
+                    </div>
+                    <!-- Content Section -->
+                    <div class="px-4 py-4">
+                        <p class="text-slate-300 text-base">Titan is Saturn's largest moon and has a thick atmosphere and liquid methane lakes. 
+                            It's one of the most Earth-like worlds in the solar system, despite its frigid temperatures.</p>
+                    </div>
+                </article>
+                <!-- article 3 -->
+                <article class="moons__card max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                    <!-- Cover Image -->
+                    <div class="relative">
+                        <img class="w-full h-48 object-cover" src="assests/image/Europa.png" alt="Moon Image">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-4 py-2">
+                        <h3>Europa (Jupiter)</h3>
+                    </div>
+                    </div>
+                    <!-- Content Section -->
+                    <div class="px-4 py-4">
+                        <p class="text-slate-300 text-base">Europa, one of Jupiter's Galilean moons, is covered in ice. Scientists believe there's a vast ocean beneath its frozen surface, 
+                            making it a prime candidate for finding extraterrestrial life.</p>
+                    </div>
+                </article>
+            </div>
+            </div>
+        </section>
         <!--==================== CELESTIAL OBJECT ====================-->
-        <section id="celestial"></section>
+        <section id="celestial" class="relative overflow-hidden">
+            <div class="container py-12">
+                <!-- title -->
+                <div class="celestial__title flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                    <h2><span class="text-yellow-500">Celes</span>tial Objects</h2> 
+                </div>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+            gap-y-20 gap-x-8">
+                <!-- article 1 -->
+                <article class="celestial__card max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                    <!-- Cover Image -->
+                    <div class="relative">
+                    <img class="w-full h-48 object-cover" src="assests/image/asteroid.png" alt="Moon Image">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-4 py-2">
+                        <h3> Asteroid belt </h3>
+                    </div>
+                    </div>
+                    <!-- Content Section -->
+                    <div class="px-4 py-4">
+                    <p class="text-slate-300 text-base">The asteroid belt lies between Mars and Jupiter and contains thousands of rocky bodies. Ceres, the largest object here, is considered a dwarf planet.</p>
+                    </div>
+                </article>
+                <!-- article 2 -->
+                <article class="celestial__card max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                    <!-- Cover Image -->
+                    <div class="relative">
+                    <img class="w-full h-48 object-cover" src="assests/image/comet.jpeg" alt="Moon Image">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-4 py-2 text-white">
+                        <h3>Comets</h3>
+                    </div>
+                    </div>
+                    <!-- Content Section -->
+                    <div class="px-4 py-4">
+                    <p class="text-slate-300 text-base">Comets are icy bodies that originate from the outer solar system. When they approach the Sun, their ice turns to gas, forming a bright tail visible from Earth.</p>
+                    </div>
+                </article>
+                <!-- article 3 -->
+                <article class="celestial__card max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+                    <!-- Cover Image -->
+                    <div class="relative">
+                    <img class="w-full h-48 object-cover" src="assests/image/kuiper.jpeg" alt="Moon Image">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-4 py-2">
+                        <h3>Kuiper Belt </h3>
+                    </div>
+                    </div>
+                    <!-- Content Section -->
+                    <div class="px-4 py-4">
+                    <p class="text-slate-300 text-base">The Kuiper Belt is a region beyond Neptune filled with icy bodies and dwarf planets, including Pluto. It's similar to the asteroid belt but far larger and more distant.</p>
+                    </div>
+                </article>
+        </div>
+        </div>
+        </section>
     </main>
     <!--==================== FOOTER ====================-->
+    <footer class="bg-gray-800 text-white-500 pt-20 pb-10 md:pt-28 relative">
+        <!-- newsletter -->
+        <div class="container absolute top-0 left-0 right-0 -translate-y-1/2">
+            <div class="bg-gray-900 px-10 pt-10 pb-10 space-y-5 rounded-md">
+                <h3><span class="text-yellow-500"> Subscribe</span> to our newsletter</h3>
+                <div class="flex flex-col md:flex-row gap-1">
+                    <input type="email" placeholder="Your Email Address"
+                    class="w-full px-5 py-3 text-gray-800 rounded-md outline-none">
+                    <button class="flex items-center justify-center gap-1
+                    bg-yellow-500 px-5 py-3 rounded-md hover:opacity-80 duration-300">
+                        <span>Subscribe</span>
+                    <i class="ri-send-plane-2-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- social icon -->
+        <div class="container mt-16 mb-10">
+            <div class="border-b border-yellow-500 relative">
+                <div class="absolute top-0 transform -translate-y-1/2 left-0
+                right-0 max-w-36 mx-auto"> 
+                    <div class="bg-gray-800  text-lg text-center space-x-2">
+                        <i class="ri-facebook-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-twitter-x-line  hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                        <i class="ri-instagram-line  hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-linkedin-fill  hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="container">
+            <p class="text-center mt-10 opacity-50"> Copyright &copy; 2024 Explore the Solar System. All rights reserved.</p>
+        </div>
+    </footer>
     <!--==================== SCROLL UP ====================-->
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    
+    </a>
     <!--==================== SWIPE JS ====================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--==================== SCROLLREVEAL ====================-->
