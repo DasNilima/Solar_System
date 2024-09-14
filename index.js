@@ -113,9 +113,10 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data`)
 sr.reveal(`.home__image`, { delay: 500, scale: 0.5})
-sr.reveal(`.overview__data`, { interval: 100 })
+sr.reveal(`.overview__content`, { interval: 100 })
 sr.reveal(`.moons__card`, { interval: 100 })
 sr.reveal(`.celestial__card`, { interval: 100 })
 sr.reveal(`.planets__title, .moons__title, .celestial__title`)
 sr.reveal(`.astronaut__image-1`, { origin: 'right' })
-sr.reveal(`.astronaut__image-2`, { origin:'left'})
+sr.reveal(`.astronaut__image-2, .overview__image`, { origin: 'left' })
+sr.reveal(`.footer__image`, { delay: 100, origin: "left"})
