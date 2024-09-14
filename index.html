@@ -84,15 +84,15 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
         </section>
         <!--==================== OVERVIEW ====================-->
         <section id="overview" class="relative overflow-hidden">
-            <div class="container space-y-10 xl:space-y-0">
-                <div class="overview__data flex flex-col items-center lg:flex-row gap-5">
+            <div class="container py-12">
+                <div class="flex flex-col items-center lg:flex-row gap-5">
                     <!-- image -->
-                    <div class="w-full relative lg:w-1/2">
+                    <div class="overview__image w-full relative lg:w-1/2">
                         <img src="assests/image/solar.png" alt="overview_image">
                     </div>
                     <!-- content -->
                     <div class="w-full lg:w-1/2">
-                        <div class="space-y-5">
+                        <div class="overview__content space-y-5">
                             <h2>
                                 About Our <span class="text-yellow-500"> Solar</span> System
                             </h2>
@@ -107,8 +107,8 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
             </div>
         </section>
         <!--==================== PLANETS ====================-->
-        <section id="planets" class="relative mb-20 md:mb-28 overflow-hidden">
-            <div class="container w-full">
+        <section id="planets" class="relative overflow-hidden">
+            <div class="container py-12">
                 <!-- floating astronaut -->
                 <div class="astronaut__image-1 absolute -top-8 -right-12 opacity-50">
                     <img src="assests/image/astronaut__1.png" alt="astronaut_image" class="w-40 md:w-52 xl:w-64">
@@ -308,7 +308,7 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
         </section>
         <!--==================== MOONS ====================-->
         <section id="moons" class="relative overflow-hidden">
-            <div class="container w-full">
+            <div class="container py-12">
                 <!-- floating astronaut -->
                 <div class="astronaut__image-2 absolute -top-8 -left-12 opacity-50">
                     <img src="assests/image/astronaut__1.png" alt="astronaut_image" class="w-40 md:w-52 xl:w-64 transform -scale-x-100">
@@ -368,8 +368,12 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
             </div>
         </section>
         <!--==================== CELESTIAL OBJECT ====================-->
-        <section id="celestial" class="relative overflow-hidden">
+        <section id="celestial" class="relative mb-20 md:mb-28 overflow-hidden">
             <div class="container py-12">
+                <!-- floating astronaut -->
+                <div class="astronaut__image-1 absolute -top-8 -right-12 opacity-50">
+                    <img src="assests/image/astronaut__1.png" alt="astronaut_image" class="w-40 md:w-52 xl:w-64">
+                </div> 
                 <!-- title -->
                 <div class="celestial__title flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
                     <h2><span class="text-yellow-500">Celes</span>tial Objects</h2> 
@@ -419,14 +423,14 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
                     </div>
                 </article>
         </div>
-        </div>
+            </div>
         </section>
     </main>
     <!--==================== FOOTER ====================-->
     <footer class="bg-gray-800 text-white-500 pt-20 pb-10 md:pt-28 relative">
         <!-- newsletter -->
         <div class="container absolute top-0 left-0 right-0 -translate-y-1/2">
-            <div class="bg-gray-900 px-10 pt-10 pb-10 space-y-5 rounded-md">
+            <div class="bg-gray-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
                 <h3><span class="text-yellow-500"> Subscribe</span> to our newsletter</h3>
                 <div class="flex flex-col md:flex-row gap-1">
                     <input type="email" placeholder="Your Email Address"
@@ -454,9 +458,46 @@ src="assests/image/background_image.webp" alt="background-image" class="fixed w-
                 </div>
             </div>
         </div>
+        <!-- content -->
+        <div class="container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 text-center md:text-start"> 
+        <!-- content 1 -->
+        <div>
+            <div class="text-7xl text-yellow-500 text-center inline-block">
+                <i class="ri-rocket-fill"></i>
+                <p class="font-Orbitron text-xl sm:text-2xl">SolarSystem</p>
+            </div>
+        </div>
+        <!-- content 2 -->
+        <div class="text-slate-300">
+            <p class="mb-5 font-bold text-xl">Quick Link</p>
+            <div class="flex flex-col gap-1">
+                <a href="#home">Home</a>
+                <a href="#overview">Overview</a>
+                <a href="#planets">Planets</a>
+                <a href="#moons">Moons</a>
+                <a href="#celestial">Celestial</a>
+            </div>
+        </div>
+        
+        <!-- content 3 -->
+            <div class="text-slate-300">
+                <p class="mb-5 font-bold text-xl">Contact Us</p>
+                <div class="flex flex-col gap-1">
+                    <a href="+8812365453">+88 123 65 453</a>
+                    <a href="mailto:Solarsystem@gmail.com">Solarsystem@gmail.com</a>
+                    <br>
+                    <p>1234 Tailwind Pkwy, CSS City, webland 12345, USA</p>
+                </div>
+            </div>
+        </div>
+
         <!-- copyright -->
         <div class="container">
             <p class="text-center mt-10 opacity-50"> Copyright &copy; 2024 Explore the Solar System. All rights reserved.</p>
+        </div>
+        <!-- astronaut image -->
+        <div class="footer__image absolute bottom-0 left-0 opacity-20 pointer-events-none">
+            <img src="assests/image/astronaut.png" alt="solar-image" class="w-full lg:w-1/2">
         </div>
     </footer>
     <!--==================== SCROLL UP ====================-->
